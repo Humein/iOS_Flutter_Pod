@@ -1,0 +1,6 @@
+framework module iOSFlutterExample {
+  umbrella header "iOSFlutterExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
