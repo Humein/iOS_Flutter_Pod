@@ -16,7 +16,7 @@ target 'iOSFlutterExample_Example' do
 #  install_all_flutter_pods(flutter_application_path)
 
   # 远端framework编译flutter
-  pod 'iOS_Flutter_Pods','0.1.0',:source =>"https://github.com/Humein/iOS_Flutter_Pod.git"
+#  pod 'iOS_Flutter_Pods','0.1.0',:source =>"https://github.com/Humein/iOS_Flutter_Pod.git"
   
   target 'iOSFlutterExample_Tests' do
     inherit! :search_paths
