@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'iOSFlutterExample'
+  s.name             = 'iOS_Flutter_Pods'
   s.version          = '0.1.0'
   s.summary          = 'A short description of iOSFlutterExample.'
 
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   s.homepage         = "https://github.com/Humein/iOS_Flutter_Pod/tree/main/iOSFlutterExampes"
   s.version          = "0.1.0"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'shou1wang@gmail.com' => 'zhangxinxin12@100tal.com' }
+  s.author           = { 'shou1wang@gmail.com' => 'zhangxinxin12@100.com' }
   s.source           = { :git => 'https://github.com/Humein/iOS_Flutter_Pod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
