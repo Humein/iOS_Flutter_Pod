@@ -21,11 +21,12 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/shou1wang@gmail.com/iOSFlutterExample'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = "https://github.com/Humein/iOS_Flutter_Pod/tree/main/iOSFlutterExampes"
+  s.version          = "0.1.0"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'shou1wang@gmail.com' => 'zhangxinxin12@100tal.com' }
-  s.source           = { :git => 'https://github.com/shou1wang@gmail.com/iOSFlutterExample.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Humein/iOS_Flutter_Pod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
