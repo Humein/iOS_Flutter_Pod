@@ -22,7 +22,7 @@ pod 'iOSFlutterExample'
 
 ## Author
 
-shou1wang@gmail.com, zhangxinxin12@100tal.com
+shou1wang@gmail.com
 
 ## License
 
