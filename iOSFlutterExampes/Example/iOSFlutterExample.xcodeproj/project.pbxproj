@@ -61,7 +61,7 @@
 		84146A5449FAE1D449377F54 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B748F6BF7E1F4D169AE6DED5 /* Pods-iOSFlutterExample_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFlutterExample_Tests.debug.xcconfig"; path = "Target Support Files/Pods-iOSFlutterExample_Tests/Pods-iOSFlutterExample_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C61BC5144589C3DBC5854492 /* iOSFlutterExample.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iOSFlutterExample.podspec; path = ../iOSFlutterExample.podspec; sourceTree = "<group>"; };
+		C61BC5144589C3DBC5854492 /* iOSFlutterExample.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iOSFlutterExample.podspec; path = ../iOSFlutterExample.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E0719A6F4BA75E3DD7BFE6F5 /* Pods_iOSFlutterExample_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSFlutterExample_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E20FF985BEB93679642AAEA2 /* Pods-iOSFlutterExample_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFlutterExample_Example.release.xcconfig"; path = "Target Support Files/Pods-iOSFlutterExample_Example/Pods-iOSFlutterExample_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E57FEA6121BF5031291EED02 /* Pods_iOSFlutterExample_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSFlutterExample_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,7 +202,6 @@
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "iOSFlutterExample_Example" */;
 			buildPhases = (
 				3D3EF87CF6B111A316B8F62A /* [CP] Check Pods Manifest.lock */,
-				B99D9EB1955BBA23391A1421 /* [CP-User] Run Flutter Build flutter_module_example Script */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
@@ -301,14 +300,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSFlutterExample_Example/Pods-iOSFlutterExample_Example-frameworks.sh",
-				"${PODS_ROOT}/../../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/engine/Flutter.framework",
-				"${PODS_ROOT}/../../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/App.framework",
+				"${PODS_ROOT}/../../iOSFlutterExample/ios_frameworks/App.framework",
+				"${PODS_ROOT}/../../iOSFlutterExample/ios_frameworks/Flutter.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSFlutterExample/iOSFlutterExample.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSFlutterExample.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,22 +336,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		B99D9EB1955BBA23391A1421 /* [CP-User] Run Flutter Build flutter_module_example Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../../../flutter_module_Pod/flutter_module_example/.metadata",
-				"${SRCROOT}/../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/App.framework/App",
-				"${SRCROOT}/../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/engine/Flutter.framework/Flutter",
-				"${SRCROOT}/../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/flutter_export_environment.sh",
-			);
-			name = "[CP-User] Run Flutter Build flutter_module_example Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 		E1269C600241B6FAB15D3277 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -28,6 +28,9 @@
   "dependencies": {
     "Flutter": [
 
+    ],
+    "fluwx_no_pay": [
+
     ]
   }
 }

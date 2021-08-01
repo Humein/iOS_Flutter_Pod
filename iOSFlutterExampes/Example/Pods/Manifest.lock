@@ -1,33 +1,16 @@
 PODS:
-  - Flutter (1.0.0)
-  - flutter_module_example (0.0.1):
-    - Flutter
-  - FlutterPluginRegistrant (0.0.1):
-    - Flutter
   - iOSFlutterExample (0.1.0)
 
 DEPENDENCIES:
-  - Flutter (from `../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/engine`)
-  - flutter_module_example (from `../../../flutter_module_Pod/flutter_module_example/.ios/Flutter`)
-  - FlutterPluginRegistrant (from `../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/FlutterPluginRegistrant`)
   - iOSFlutterExample (from `../`)
 
 EXTERNAL SOURCES:
-  Flutter:
-    :path: "../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/engine"
-  flutter_module_example:
-    :path: "../../../flutter_module_Pod/flutter_module_example/.ios/Flutter"
-  FlutterPluginRegistrant:
-    :path: "../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/FlutterPluginRegistrant"
   iOSFlutterExample:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_module_example: 2a121f1e1a341295000e3a5ac127492d9fbb7237
-  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
-  iOSFlutterExample: 10de5ef5b2040b659f2cabb7a59c336c0d0e8a9e
+  iOSFlutterExample: 2693deeb789098f475d04f18177ac766d3696a0d
 
-PODFILE CHECKSUM: 8509edeefe313ca8e61ba9dbd9429f20a62f1668
+PODFILE CHECKSUM: 7c171a9e542bf892b020867b7d7a598ea388a0ab
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.10.0

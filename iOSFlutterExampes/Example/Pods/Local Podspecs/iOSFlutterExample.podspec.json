@@ -18,5 +18,8 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "iOSFlutterExample/Classes/**/*"
+  "source_files": "iOSFlutterExample/Classes/**/*",
+  "ios": {
+    "vendored_frameworks": "iOSFlutterExample/ios_frameworks/*.framework"
+  }
 }

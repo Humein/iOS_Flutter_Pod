@@ -7,7 +7,7 @@
 //
 
 #import "XESAPPAppDelegate.h"
-#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
+//#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
 
 @interface XESAPPAppDelegate ()
 @property (nonatomic, strong) FlutterPluginAppLifeCycleDelegate* lifeCycleDelegate;
@@ -110,7 +110,7 @@ performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult result))comp
 {
     self.flutterEngine = [[FlutterEngine alloc] initWithName:@"io.flutter" project:nil];
     [self.flutterEngine runWithEntrypoint:nil];
-    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
+//    [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
     return [_lifeCycleDelegate application:application didFinishLaunchingWithOptions:launchOptions];
 }
 

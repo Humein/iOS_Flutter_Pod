@@ -39,4 +39,11 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+#  s.ios.vendored_frameworks = 'iOSFlutterExample/ios_frameworks/App.framework',
+#   'iOSFlutterExample/ios_frameworks/Flutter.framework',
+#   'iOSFlutterExample/ios_frameworks/FlutterPluginRegistrant.framework',
+#   'iOSFlutterExample/ios_frameworks/fluwx_no_pay.framework'
+
+   s.ios.vendored_frameworks = 'iOSFlutterExample/ios_frameworks/*.framework'
+
 end
