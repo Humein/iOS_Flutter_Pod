@@ -1,0 +1,16 @@
+PODS:
+  - iOSFlutterExample (0.1.0)
+
+DEPENDENCIES:
+  - iOSFlutterExample (from `../`)
+
+EXTERNAL SOURCES:
+  iOSFlutterExample:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOSFlutterExample: 2693deeb789098f475d04f18177ac766d3696a0d
+
+PODFILE CHECKSUM: 7c171a9e542bf892b020867b7d7a598ea388a0ab
+
+COCOAPODS: 1.10.0

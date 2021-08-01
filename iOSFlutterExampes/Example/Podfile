@@ -1,0 +1,22 @@
+use_frameworks!
+
+platform :ios, '9.0'
+# flutter模块路径配置
+flutter_application_path = '../../../flutter_module_Pod/flutter_module_example'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+target 'iOSFlutterExample_Example' do
+  # 本地编译flutter framework
+  pod 'iOSFlutterExample', :path => '../'
+  
+  # 本地编译flutter源码
+#  install_all_flutter_pods(flutter_application_path)
+
+  # 远端framework编译flutter
+#  pod 'Flutter', :podspec => '/Users/zhangxinxin/MCode/Debug/Flutter.podspec'
+  target 'iOSFlutterExample_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
