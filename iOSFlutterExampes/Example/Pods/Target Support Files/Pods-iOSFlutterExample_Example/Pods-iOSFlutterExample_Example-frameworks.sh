@@ -175,14 +175,12 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/../../iOSFlutterExample/ios_frameworks/App.framework"
-  install_framework "${PODS_ROOT}/../../iOSFlutterExample/ios_frameworks/Flutter.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/iOSFlutterExample/iOSFlutterExample.framework"
+  install_framework "${PODS_ROOT}/../../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/App.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/../../iOSFlutterExample/ios_frameworks/App.framework"
-  install_framework "${PODS_ROOT}/../../iOSFlutterExample/ios_frameworks/Flutter.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/iOSFlutterExample/iOSFlutterExample.framework"
+  install_framework "${PODS_ROOT}/../../../../flutter_module_Pod/flutter_module_example/.ios/Flutter/App.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -1,0 +1,6 @@
+framework module fluwx_no_pay {
+  umbrella header "fluwx_no_pay-umbrella.h"
+
+  export *
+  module * { export * }
+}

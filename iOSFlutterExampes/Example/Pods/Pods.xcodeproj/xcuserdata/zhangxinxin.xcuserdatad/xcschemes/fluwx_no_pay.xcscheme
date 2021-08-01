@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F231F50BD73850974B67574F43CE254B"
-               BuildableName = "iOSFlutterExample.framework"
-               BlueprintName = "iOSFlutterExample"
+               BlueprintIdentifier = "5CA3D8DAD786FD19C999E42C9F18E7DC"
+               BuildableName = "fluwx_no_pay.framework"
+               BlueprintName = "fluwx_no_pay"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

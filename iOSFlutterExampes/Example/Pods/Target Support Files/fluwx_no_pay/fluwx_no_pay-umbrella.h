@@ -10,7 +10,9 @@
 #endif
 #endif
 
+#import "FluwxPlugin.h"
+#import "FluwxShareHandler.h"
 
-FOUNDATION_EXPORT double iOSFlutterExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char iOSFlutterExampleVersionString[];
+FOUNDATION_EXPORT double fluwx_no_payVersionNumber;
+FOUNDATION_EXPORT const unsigned char fluwx_no_payVersionString[];
 
