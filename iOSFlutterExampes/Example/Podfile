@@ -3,7 +3,6 @@ use_frameworks!
 platform :ios, '9.0'
 
 source 'https://github.com/CocoaPods/Specs.git'  # 官方库
-source 'https://github.com/Humein/iOS_Flutter_Pod.git'   # 私有库
 
 # flutter模块路径配置
 flutter_application_path = '../../../flutter_module_Pod/flutter_module_example'
@@ -14,10 +13,10 @@ target 'iOSFlutterExample_Example' do
 #  pod 'iOSFlutterExample', :path => '../'
   
   # 本地编译flutter源码
-  install_all_flutter_pods(flutter_application_path)
+#  install_all_flutter_pods(flutter_application_path)
 
   # 远端framework编译flutter
-#  pod 'iOSFlutterExample','0.1.0',:source =>"https://github.com/Humein/iOS_Flutter_Pod.git"
+  pod 'InitPodFrameWork','0.1.1',:source =>"https://github.com/Humein/InitPodFrameWork.git"
   
   target 'iOSFlutterExample_Tests' do
     inherit! :search_paths
